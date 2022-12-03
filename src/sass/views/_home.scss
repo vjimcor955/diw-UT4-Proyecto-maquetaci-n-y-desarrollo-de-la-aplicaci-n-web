@@ -1,0 +1,184 @@
+// Inicio
+
+body {
+    margin: 0px auto;
+}
+
+
+
+div.Inicio {
+    width: 100%;  
+    height: 100vh;
+    text-align: center;
+}
+
+img.Fondo_inicio{
+    opacity: 90%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.Logo_inicio {
+    width: inherit;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+}
+
+
+
+div.Campeones {
+    width: 100%;
+    height: 50vh;
+    background-color: $color-principal-oscuro;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.Marco_imagen_campeones {
+    top: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+img.Imagen_campeones {
+    width: 60%;
+}
+
+div.Texto_campeones {
+    width: 50%;
+    height: 260px;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    column-gap: 50px;
+    
+    h1 {
+        margin: 10px 0px;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    button {
+        margin-top: 80px;
+        margin-bottom: 10px;
+        padding: 10px 25px;
+        background: $color-secundario;
+        font-weight: bold;
+        font-size: medium;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+
+
+div.Maestrias {
+    width: 100%;
+    height: 50vh;
+    background-color: $color-secundario-oscuro;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.Marco_imagen_maestrias {
+    width: 50%;
+    text-align: center;
+}
+
+div.Texto_maestrias {
+    width: 50%;
+    height: 260px;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    column-gap: 50px;
+
+    h1 {
+        margin: 10px 0px;
+    }
+    
+    p {
+        font-size: large;
+    }
+
+    button {
+        margin-top: 80px;
+        margin-bottom: 10px;
+        padding: 10px 25px;
+        background: $color-principal;
+        color: aliceblue;
+        font-weight: bold;
+        font-size: medium;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+img.Imagen_maestrias {
+    width: 60%;
+}
+
+
+
+div.Desafios {
+    width: 100%;
+    height: 50vh;
+    background-color: $color-principal-oscuro;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.Marco_imagen_desafios {
+    width: 50%;
+    text-align: center;
+}
+
+img.Imagen_desafios {
+    width: 60%;
+}
+
+div.Texto_desafios {
+    width: 50%;
+    height: 260px;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    column-gap: 50px;
+
+    h1 {
+        margin: 10px 0px;
+    }
+    
+    p {
+        font-size: large;
+    }
+    
+    button {
+        margin-top: 80px;
+        margin-bottom: 10px;
+        padding: 10px 25px;
+        background: $color-secundario;
+        font-weight: bold;
+        font-size: medium;
+        border: none;
+        border-radius: 5px;
+    }
+}
+

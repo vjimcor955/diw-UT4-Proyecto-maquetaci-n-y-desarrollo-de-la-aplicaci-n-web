@@ -1,0 +1,50 @@
+// Header
+
+header {
+  width: 100%;
+  height: 125px;
+  background-color: $color-principal;  
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  row-gap: 50px; /* no funciona */
+  justify-content: center;
+  align-items: center;
+
+  div.Logo_header {
+    width: 20vw;
+    text-align: center;
+
+    img {
+      width: 75%;
+    }
+  }
+
+  div.Menu_header {
+    width: 55vw;
+    font-weight: bold;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+  }
+
+  div.Registro_header {
+    width: 25vw;
+    font-weight: bold;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    align-items: center;
+  }
+
+  button {
+    padding: 10px 25px;
+    background: $color-secundario;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+  }
+}
