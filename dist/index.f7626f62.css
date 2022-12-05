@@ -292,11 +292,53 @@ img.Fondo_inicio {
   object-fit: cover;
 }
 
-div.Logo_inicio {
+div.Targeta {
   width: inherit;
   z-index: 1;
+  justify-content: center;
+  display: flex;
   position: absolute;
-  top: 45%;
+  top: 23%;
+}
+
+div.Targeta div.Cara_login {
+  width: 45vw;
+  height: 80vh;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+  display: flex;
+}
+
+div.Targeta div.Cara_login div.Campos {
+  text-align: left;
+}
+
+div.Targeta div.Cara_login div.Botones {
+  width: inherit;
+  height: 100px;
+  text-align: center;
+}
+
+div.Targeta div.Cara_login div.Botones a.inicio_sesion {
+  color: #f0f8ff;
+  background: #dd5353;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: medium;
+  text-decoration: none;
+}
+
+div.Targeta div.Cara_login div.Botones a.registrarse {
+  flex-direction: column;
+  row-gap: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */
