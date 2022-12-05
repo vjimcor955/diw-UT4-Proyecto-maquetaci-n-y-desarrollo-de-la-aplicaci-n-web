@@ -24,7 +24,7 @@ div.Logo_inicio {
     width: inherit;
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 45%;
 }
 
 
@@ -67,16 +67,19 @@ div.Texto_campeones {
         font-size: large;
     }
 
-    button {
+    a.boton {
         margin-top: 80px;
         margin-bottom: 10px;
         padding: 10px 25px;
         background: $color-secundario;
+        color: black;
+        text-decoration: none;
         font-weight: bold;
         font-size: medium;
         border: none;
         border-radius: 5px;
     }
+
 }
 
 
@@ -114,12 +117,13 @@ div.Texto_maestrias {
         font-size: large;
     }
 
-    button {
+    a.boton {
         margin-top: 80px;
         margin-bottom: 10px;
         padding: 10px 25px;
         background: $color-principal;
         color: aliceblue;
+        text-decoration: none;
         font-weight: bold;
         font-size: medium;
         border: none;
@@ -170,11 +174,13 @@ div.Texto_desafios {
         font-size: large;
     }
     
-    button {
+    a.boton {
         margin-top: 80px;
         margin-bottom: 10px;
         padding: 10px 25px;
         background: $color-secundario;
+        color: black;
+        text-decoration: none;
         font-weight: bold;
         font-size: medium;
         border: none;
