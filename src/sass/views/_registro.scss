@@ -1,23 +1,5 @@
 // Registro
 
-body {
-    margin: 0px auto;
-}
-
-div.Inicio {
-    width: 100%;  
-    height: 100vh;
-    text-align: center;
-}
-
-img.Fondo_inicio{
-    opacity: 90%;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 div.Targeta {
     width: inherit;
     position: absolute;
@@ -26,44 +8,84 @@ div.Targeta {
     display: flex;
     justify-content: center;
 
-    div.Cara_login{
+    div.Fondo_targeta{
         width: 45vw;
         height: 80vh;
         background-color: $color-secundario-oscuro;
         border: 5px solid $color-principal-oscuro;
         border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 60px;
-        align-items: center;
 
-        div.Campos {
-            text-align: left;
-        }
-
-        div.Botones {
-            width: inherit;
-            height: 100px;
-            text-align: center;
-
-            a.inicio_sesion {
-                padding: 10px 25px;
-                background: $color-principal;
-                color: aliceblue;
-                text-decoration: none;
-                font-size: medium;
-                border: none;
-                border-radius: 5px;
+        div.Inicio_sesion{
+            
+            h1 {
+                padding-top: 40px;
             }
 
-            a.registrarse {
-                text-decoration: none;
-                font-weight: bold;
+            div.Campos {
                 display: flex;
                 flex-direction: column;
-                row-gap: 20;
+                padding-top: 10px;
+                row-gap: 5px;
+                font-weight: bold;
+                align-items: center
+            }
+
+            div.Botones {
+                height: 100px;
+                text-align: center;
+                padding-top: 70px;
+    
+                a.inicio_sesion {
+                    padding: 10px 25px;
+                    background: $color-principal;
+                    color: aliceblue;
+                    text-decoration: none;
+                    border-radius: 5px;
+                }
+    
+                a.registrarse {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    padding-top: 35px;
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
 
+        div.Registro {
+            
+            div.Campos {
+                font-weight: bold;
+                text-align: left;
+                display: flex;
+                justify-content: center;
+            }
+
+            div.Botones {
+                height: 100px;
+                text-align: center;
+                padding-top: 40px;
+    
+                a.registrarse {
+                    padding: 10px 25px;
+                    background: $color-principal;
+                    color: aliceblue;
+                    text-decoration: none;
+                    border-radius: 5px;
+                }
+    
+                a.inicio_sesion {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    padding-top: 35px;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+        }
     }
 }

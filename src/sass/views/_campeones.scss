@@ -1,1 +1,27 @@
 // Campeones
+
+div.Campeones_titulo {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    display: flex;
+    vertical-align: middle;
+
+    h1.Titulo {
+        background-color: $color-secundario-oscuro;
+        border: 5px solid $color-principal-oscuro;
+        border-radius: 20px;
+        width: 25vw;
+        height: 12vh;
+        
+    }
+
+    h1.Contador {
+        background-color: $color-secundario-oscuro;
+        border: 5px solid $color-principal-oscuro;
+        border-radius: 20px;
+        width: 40vw;
+        height: 12vh;
+    }
+
+}

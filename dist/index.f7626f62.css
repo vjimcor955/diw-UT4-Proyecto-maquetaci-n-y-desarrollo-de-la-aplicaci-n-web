@@ -274,24 +274,6 @@ div.Texto_desafios a.boton {
   text-decoration: none;
 }
 
-body {
-  margin: 0 auto;
-}
-
-div.Inicio {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-}
-
-img.Fondo_inicio {
-  opacity: .9;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 div.Targeta {
   width: inherit;
   z-index: 1;
@@ -301,44 +283,102 @@ div.Targeta {
   top: 23%;
 }
 
-div.Targeta div.Cara_login {
+div.Targeta div.Fondo_targeta {
   width: 45vw;
   height: 80vh;
   background-color: #dbc8ac;
   border: 5px solid #9b3939;
   border-radius: 20px;
+}
+
+div.Targeta div.Fondo_targeta div.Inicio_sesion h1 {
+  padding-top: 40px;
+}
+
+div.Targeta div.Fondo_targeta div.Inicio_sesion div.Campos {
   flex-direction: column;
   align-items: center;
-  row-gap: 60px;
+  row-gap: 5px;
+  padding-top: 10px;
+  font-weight: bold;
   display: flex;
 }
 
-div.Targeta div.Cara_login div.Campos {
-  text-align: left;
-}
-
-div.Targeta div.Cara_login div.Botones {
-  width: inherit;
+div.Targeta div.Fondo_targeta div.Inicio_sesion div.Botones {
   height: 100px;
   text-align: center;
+  padding-top: 70px;
 }
 
-div.Targeta div.Cara_login div.Botones a.inicio_sesion {
+div.Targeta div.Fondo_targeta div.Inicio_sesion div.Botones a.inicio_sesion {
   color: #f0f8ff;
   background: #dd5353;
-  border: none;
   border-radius: 5px;
   padding: 10px 25px;
-  font-size: medium;
   text-decoration: none;
 }
 
-div.Targeta div.Cara_login div.Botones a.registrarse {
+div.Targeta div.Fondo_targeta div.Inicio_sesion div.Botones a.registrarse {
+  color: #000;
   flex-direction: column;
-  row-gap: 20px;
+  padding-top: 35px;
   font-weight: bold;
   text-decoration: none;
   display: flex;
+}
+
+div.Targeta div.Fondo_targeta div.Registro div.Campos {
+  text-align: left;
+  justify-content: center;
+  font-weight: bold;
+  display: flex;
+}
+
+div.Targeta div.Fondo_targeta div.Registro div.Botones {
+  height: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+div.Targeta div.Fondo_targeta div.Registro div.Botones a.registrarse {
+  color: #f0f8ff;
+  background: #dd5353;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+div.Targeta div.Fondo_targeta div.Registro div.Botones a.inicio_sesion {
+  color: #000;
+  flex-direction: column;
+  padding-top: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+}
+
+div.Campeones_titulo {
+  z-index: 1;
+  vertical-align: middle;
+  display: flex;
+  position: absolute;
+  top: 20%;
+}
+
+div.Campeones_titulo h1.Titulo {
+  width: 25vw;
+  height: 12vh;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+}
+
+div.Campeones_titulo h1.Contador {
+  width: 40vw;
+  height: 12vh;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */
