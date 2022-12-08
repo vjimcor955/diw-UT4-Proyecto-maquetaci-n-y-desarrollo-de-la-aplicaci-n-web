@@ -6,87 +6,133 @@
     <link rel="stylesheet" href="sass/main.scss" />
     <!-- <script type="module" src="app.js"></script> -->
   </head>
+  <body>
     <main>
-      <header>
-        <div class="Logo_header">
-          <a href="index.html"><img src="img/Logo_large.png" /></a>
+      <header class="header">
+        <a href="index.html"><img class="header__logo" src="img/Logo_large.png" /></a>
+        <div class="header__menu">
+          <a class="header__link" href="campeones.html">CAMPEONES</a>
+          <a class="header__link" href="maestrias.html">MAESTRIAS</a>
+          <a class="header__link" href="desafios.html">DESAFIOS</a>
         </div>
-        <div class="Menu_header">
-          <a href="campeones.html">CAMPEONES</a>
-          <a href="maestrias.html">MAESTRIAS</a>
-          <a href="desafios.html">DESAFIOS</a>
-        </div>
-        <div class="Registro_header">
-          <a href="registro.html">INICIAR SESIÓN</a>
-          <a class="boton" href="registro.html">REGISTRARSE</a>
+        <div class="header__registro">
+          <a class="header__link" href="registro.html">INICIAR SESIÓN</a>
+          <a class="button" href="registro.html">REGISTRARSE</a>
         </div>
       </header>
+      
 
 
-
-      <div class="Inicio">
-        <img class="Fondo_inicio" src="img/Escritorio_Background.png" />
-        <div class="Targeta">
-          <div class="Inicio_sesion"> 
+      <div class="inicio">
+        <img class="inicio__fondo" src="img/Escritorio_Background.png" />
+        <div class="targeta">
+          <div class="targeta__inicio_sesion"> 
             <h1>INICIAR SESIÓN</h1>
-            <div class="Campos">
-              <p>Nombre de usuario:</p>
-              <input type="text" size="20" maxlength="30" name="User">
-              <p>Contraseña:</p>
-              <input type="text" size="20" maxlength="30" name="Password">
+            <div class="targeta__inicio_sesion-campos">
+              <ul>
+                <div class="campos">
+                  <div class="campo__1"> 
+                    <li>
+                      <label for="name">Nombre:</label>
+                    </li>
+                    <input type="text" id="name" name="name">
+                  </div>
+                  <div class="campo__2"> 
+                    <li>
+                      <label for="surname">Apellidos:</label>
+                    </li>
+                    <input type="text" id="surname" name="surname">
+                  </div>
+                </div>
+              </ul>
             </div>
-            <div class="Botones">
-                <a class="inicio_sesion" href="index.html">Iniciar sesión</a>
-                <a class="registrarse">Registarse</a>
+            <div class="targeta__inicio_sesion-botones">
+                <a class="button" href="index.html">Iniciar sesión</a>
+                <a class="targeta__link">Registarse</a>
             </div>
           </div>
-          <div class="Registro"> 
+          <div class="registro"> 
             <h1>REGISTRO</h1>
-            <div class="Campos">
-              <div class="Campos_1">
-                <p>Nombre:</p>
-                <input type="text" size="20" maxlength="30" name="name">
-                <p>Correo electronico:</p>
-                <input type="text" size="20" maxlength="30" name="email">
-                <p>Contraseña:</p>
-                <input type="text" size="20" maxlength="30" name="password">
-                <p>Nombre de usuario:</p>
-                <input type="text" size="20" maxlength="30" name="user">
-              </div>
-              <div class="Campos_2">
-                  <p>Apellidos:</p>
-                  <input type="text" size="20" maxlength="30" name="nurname">
-                  <p>Fecha de nacimiento:</p>
-                  <input type="text" size="20" maxlength="30" name="birthdate">
-                  <p>Confirmar contraseña:</p>
-                  <input type="text" size="20" maxlength="30" name="confirm_password">
-              </div>
+            <div class="targeta__registro-campos">
+              <form action="register" method="post">
+                <ul>
+                <div class="campos">
+                  <div class="campo__1"> 
+                    <li>
+                      <label for="name">Nombre:</label>
+                    </li>
+                    <input type="text" id="name" name="name">
+                  </div>
+                  <div class="campo__2"> 
+                    <li>
+                      <label for="surname">Apellidos:</label>
+                    </li>
+                    <input type="text" id="surname" name="surname">
+                  </div>
+                </div>
+
+                <div class="campos">
+                  <div class="campo__3"> 
+                    <li>
+                      <label for="email">Correo electronico:</label>
+                    </li>
+                    <input type="email" id="email" name="email"></input>
+                  </div>
+                  <div class="campo__4"> 
+                    <li>
+                    <label for="birthdate">Fecha de nacimiento:</label>
+                    </li>
+                    <input type="date" id="birthdate" name="birthdate">
+                  </div>
+                </div>
+                <div class="campos">
+                  <div class="campo__5"> 
+                    <li>
+                        <label for="user_name">Nombre de usuario:</label>
+                    </li>
+                    <input type="text" id="user_name" name="user_name">
+                  </div>
+                </div>
+                <div class="campos">
+                  <div class="campos__6">
+                    <li>
+                      <label for="password">Contraseña:</label>
+                    </li>
+                    <input type="password" id="password" name="password"></input>
+                  </div>
+                  <div class="campos__7">
+                    <li>
+                      <label for="confirm_password">Confirmar contraseña:</label>
+                    </li>
+                    <input type="password" id="confirm_password" name="confirm_password"></input>
+                  </div>
+                </div>
+                </ul>
+              </form>
             </div>
-            <div class="Botones">
-              <a class="registrarse">Registarse</a> 
-              <a class="inicio_sesion">Iniciar sesión</a> 
+            <div class="targeta__registro-botones">
+              <a class="button">Registarse</a> 
+              <a class="targeta__link">Iniciar sesión</a> 
             </div>
           </div>   
         </div>
       </div>
+
+
       
-
-
-      <footer>
-        <div class="Logo_footer">
-          <a href="index.html"><img src="img/Logo_small.png" /></a>
+      <footer class="footer">
+        <a class="footer__logo" href="index.html"><img src="img/Logo_small.png" /></a>
+        <div class="footer__menu">
+          <a class="footer__link">QUIÉNES SOMOS</a>
+          <a class="footer__link">SEGURIDAD</a>
+          <a class="footer__link">TÉRMINOS DE SERVICIO</a>
+          <a class="footer__link">ASISTENCIA AL JUGADOR</a>
+          <a class="footer__link">ACCESIBILIDAD</a>
         </div>
-        <div class="Menu_footer">
-          <a>QUIÉNES SOMOS</a>
-          <a>SEGURIDAD</a>
-          <a>TÉRMINOS DE SERVICIO</a>
-          <a>ASISTENCIA AL JUGADOR</a>
-          <a>ACCESIBILIDAD</a>
-        </div>
-        <div class="Iconos_footer">
-          <a href="https://twitter.com/lol_es" target="_blank"><img src="img/icon_twitter.png" /></a> 
-          <a href="https://www.instagram.com/lol_es/?hl=es" target="_blank"><img src="img/icon_instagram.png" /></a>
-          <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank"><img src="img/icon_reddit.png" /></a>
+        <div class="footer__iconos">
+          <a href="https://twitter.com/lol_es" target="_blank"><img class="icono" src="img/icon_twitter.png" /></a> 
+          <a href="https://www.instagram.com/lol_es/?hl=es" target="_blank"><img class="icono" src="img/icon_instagram.png" /></a>
+          <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank"><img class="icono" src="img/icon_reddit.png" /></a>
         </div>
       </footer>
     </main>
