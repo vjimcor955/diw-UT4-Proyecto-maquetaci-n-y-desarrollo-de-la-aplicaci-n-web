@@ -6,30 +6,31 @@ body {
 
 
 
-div.Inicio {
+.inicio {
     width: 100%;  
     height: 100vh;
     text-align: center;
+
+    .inicio__fondo{
+        position: relative;
+        opacity: 90%;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .inicio__imagen {
+        width: 40%;
+        position: relative;
+        z-index: 1;
+        top: -70%;
+    }
 }
 
-img.Fondo_inicio{
-    opacity: 90%;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-div.Logo_inicio {
-    width: inherit;
-    position: absolute;
-    z-index: 1;
-    top: 45%;
-}
 
 
-
-div.Campeones {
+.campeones {
     width: 100%;
     height: 50vh;
     background-color: $color-principal-oscuro;
@@ -38,53 +39,40 @@ div.Campeones {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-div.Marco_imagen_campeones {
-    top: 50%;
-    width: 50%;
-    text-align: center;
-}
-
-img.Imagen_campeones {
-    width: 60%;
-}
-
-div.Texto_campeones {
-    width: 50%;
-    height: 260px;
-    padding-right: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    column-gap: 50px;
+    .campeones__marco-imagen {
+        top: 50%;
+        width: 50%;
+        text-align: center;
     
-    h1 {
-        margin: 10px 0px;
     }
 
-    p {
-        font-size: large;
+    .campeones__imagen {
+        width: 60%;
     }
 
-    a.boton {
-        margin-top: 80px;
-        margin-bottom: 10px;
-        padding: 10px 25px;
-        background: $color-secundario;
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: medium;
-        border: none;
-        border-radius: 5px;
-    }
+    .campeones__texto {
+        width: 50%;
+        height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        padding-right: 10%;
+        display: flex;
+    
+        p {
+            font-size: larger;
+        }
 
+        .button {
+            background-color: $color-secundario;
+        }
+    }
 }
 
 
 
-div.Maestrias {
+.maestrias {
     width: 100%;
     height: 50vh;
     background-color: $color-secundario-oscuro;
@@ -93,51 +81,39 @@ div.Maestrias {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-div.Marco_imagen_maestrias {
-    width: 50%;
-    text-align: center;
-}
-
-div.Texto_maestrias {
-    width: 50%;
-    height: 260px;
-    padding-left: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    column-gap: 50px;
-
-    h1 {
-        margin: 10px 0px;
+    .maestrias__marco-imagen {
+        width: 50%;
+        text-align: center;
     }
+
+    img.Imagen_maestrias {
+        width: 60%;
+    }
+
+    .maestrias__texto {
+        width: 50%;
+        height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        padding-left: 10%;
+        display: flex;
     
-    p {
-        font-size: large;
-    }
+        p {
+            font-size: larger;
+        }
 
-    a.boton {
-        margin-top: 80px;
-        margin-bottom: 10px;
-        padding: 10px 25px;
-        background: $color-principal;
-        color: aliceblue;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: medium;
-        border: none;
-        border-radius: 5px;
+        .button {
+            color: aliceblue;
+            background-color: $color-principal-oscuro;
+        }
     }
 }
 
-img.Imagen_maestrias {
-    width: 60%;
-}
 
 
-
-div.Desafios {
+.desafios {
     width: 100%;
     height: 50vh;
     background-color: $color-principal-oscuro;
@@ -146,45 +122,33 @@ div.Desafios {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-div.Marco_imagen_desafios {
-    width: 50%;
-    text-align: center;
-}
-
-img.Imagen_desafios {
-    width: 60%;
-}
-
-div.Texto_desafios {
-    width: 50%;
-    height: 260px;
-    padding-right: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    column-gap: 50px;
-
-    h1 {
-        margin: 10px 0px;
-    }
+    .desafios__marco-imagen {
+        top: 50%;
+        width: 50%;
+        text-align: center;
     
-    p {
-        font-size: large;
     }
+
+    .desafios__imagen {
+        width: 60%;
+    }
+
+    .desafios__texto {
+        width: 50%;
+        height: 300px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        padding-right: 10%;
+        display: flex;
     
-    a.boton {
-        margin-top: 80px;
-        margin-bottom: 10px;
-        padding: 10px 25px;
-        background: $color-secundario;
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: medium;
-        border: none;
-        border-radius: 5px;
+        p {
+            font-size: larger;
+        }
+
+        .button {
+            background-color: $color-secundario;
+        }
     }
 }
-
