@@ -10,8 +10,8 @@
     perspective: 2000px;
 
     .targeta__inicio_sesion {
-        width: 45vw;
-        height: 80vh;
+        width: 625px;
+        height: 500px;
         background-color: $color-secundario-oscuro;
         border: 5px solid $color-principal-oscuro;
         border-radius: 20px;
@@ -67,8 +67,8 @@
     }
 
     .registro {
-        width: 45vw;
-        height: 80vh;
+        width: 625px;
+        height: 500px;
         background-color: $color-secundario-oscuro;
         border: 5px solid $color-principal-oscuro;
         border-radius: 20px;
@@ -77,14 +77,15 @@
         transform: rotate3d(180deg);
         backface-visibility: hidden;
 
-        .targeta__registro-campos {
-            font-weight: bold;
+        .targeta__registro-campos {   
             text-align: left;
-            display: flex;
+            width: auto;
             flex-direction: column;
             justify-content: center;
             column-gap: 15%;
-            padding-left: 5%;          
+            font-weight: bold;
+            display: flex;
+            padding-left: 75px;
 
             .campos {
                 display: flex;
@@ -92,10 +93,11 @@
             }
 
             ul {
-                display: flex;
                 gap: 20px;
-                flex-direction: column;
                 list-style: none;
+                display: flex;
+                flex-direction: column;
+                padding-left: 0px;
             }
 
         }
