@@ -1,0 +1,107 @@
+// Maestrias
+
+.maestrias__marco {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+     
+    .maestrias__titulo {
+        position: relative;
+        background-color: $color-secundario-oscuro;
+        border: 5px solid $color-principal-oscuro;
+        border-radius: 20px;
+        left: 10%;
+        width: 300px;
+    }
+
+    .maestrias__campeones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .maestrias__campeon_1 {
+            background-color: $color-secundario-oscuro;
+            border: 5px solid $color-principal-oscuro;
+            border-radius: 30px;
+            width: 70%;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+
+            .campeon__imagen {
+                h3 {
+                    top: 5%;
+                    margin: 5%;
+                }
+
+                .campeon__imagen-contenido {
+                    display: flex;
+                    align-items: center;
+                    gap: 70px;
+    
+                    img {
+                        width: 30%;
+                    }
+                }
+            }
+            
+            .campeon__maestria {
+                align-items: center;
+
+                h3 {
+                    top: 5%;
+                    margin: 5%;
+                }
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .campeon__partidas {
+                align-items: center;
+
+                h3 {
+                    top: 5%;
+                    margin: 5%;
+                }
+            }
+
+            .campeon__victorias {
+                align-items: center;
+
+                h3 {
+                    top: 5%;
+                    margin: 5%;
+                }
+            }
+        }
+
+        .maestrias__scroll_campeones {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+
+            .maestrias__campeon{
+                background-color: $color-secundario-oscuro;
+                border: 5px solid $color-principal-oscuro;
+                border-radius: 30px;
+                width: 100%;
+                height: 75px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12%;
+
+                img {
+                    width: 7%;
+                }
+            }
+        }
+    }
+}

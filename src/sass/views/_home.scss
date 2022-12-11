@@ -2,6 +2,7 @@
 
 body {
     margin: 0px auto;
+    font-family: Jost;
 }
 
 
@@ -55,10 +56,14 @@ body {
         height: inherit;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10%;
         padding-right: 10%;
         display: flex;
-    
+        justify-content: center;
+        
+        h1 {
+            margin-top: 0px;
+        }
+
         p {
             font-size: larger;
         }
@@ -90,15 +95,19 @@ body {
         }
     }
 
-    .maestrias__texto {
+    .maestrias__texto {  
         width: 50%;
-        height: 300px;
+        height: inherit;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10%;
         padding-left: 10%;
         display: flex;
-    
+        justify-content: center;
+
+        h1 {
+            margin-top: 0px;
+        }
+
         p {
             font-size: larger;
         }
@@ -134,13 +143,17 @@ body {
 
     .desafios__texto {
         width: 50%;
-        height: 300px;
+        height: inherit;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10%;
         padding-right: 10%;
         display: flex;
-    
+        justify-content: center;
+        
+        h1 {
+            margin-top: 0px;
+        }
+        
         p {
             font-size: larger;
         }

@@ -1,1 +1,69 @@
 // Formularios
+
+.inicio_sesion {
+    h1 {
+        padding-top: 5%;
+        padding-bottom: 20px;
+    }
+
+    .inicio_sesion__campos {
+        text-align: left;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30%;          
+
+        .campos {
+            gap: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            list-style: none;
+        }
+    }
+
+    .inicio_sesion__botones {
+        height: 100px;
+        text-align: center;
+        padding-top: 60px;
+    }
+}
+
+.registro {
+    .registro__campos {   
+        text-align: left;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 15%;
+        font-weight: bold;
+        display: flex;
+        padding-left: 75px;
+
+        .campos {
+            display: flex;
+            gap: 20%;
+        }
+
+        ul {
+            gap: 20px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+        }
+
+    }
+
+    .registro__botones {
+        height: 100px;
+        text-align: center;
+        padding-top: 35px;
+    }
+}

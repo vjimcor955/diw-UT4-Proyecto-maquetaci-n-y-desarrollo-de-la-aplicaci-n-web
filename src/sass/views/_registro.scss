@@ -9,7 +9,7 @@
     justify-content: center;
     perspective: 2000px;
 
-    .targeta__inicio_sesion {
+    .inicio_sesion {
         width: 625px;
         height: 500px;
         background-color: $color-secundario-oscuro;
@@ -18,51 +18,18 @@
         position: absolute;
         transform-style: preserve-3d;
 
-        h1 {
-            padding-top: 5%;
-            padding-bottom: 20px;
+        .button {
+            background: $color-principal;
+            color: aliceblue;
         }
 
-        .targeta__inicio_sesion-campos {
-            text-align: left;
+        .targeta__link {
+            text-decoration: none;
+            color: black;
             font-weight: bold;
+            padding-top: 35px;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            padding-left: 30%;          
-
-            .campos {
-                gap: 50px;
-                display: flex;
-                flex-direction: column;
-            }
-
-            ul {
-                display: flex;
-                gap: 20px;
-                flex-direction: column;
-                list-style: none;
-            }
-        }
-
-        .targeta__inicio_sesion-botones {
-            height: 100px;
-            text-align: center;
-            padding-top: 70px;
-
-            .button {
-                background: $color-principal;
-                color: aliceblue;
-            }
-
-            .targeta__link {
-                text-decoration: none;
-                color: black;
-                font-weight: bold;
-                padding-top: 35px;
-                display: flex;
-                flex-direction: column;
-            }
         }
     }
 
@@ -77,49 +44,18 @@
         transform: rotate3d(180deg);
         backface-visibility: hidden;
 
-        .targeta__registro-campos {   
-            text-align: left;
-            width: auto;
-            flex-direction: column;
-            justify-content: center;
-            column-gap: 15%;
-            font-weight: bold;
-            display: flex;
-            padding-left: 75px;
-
-            .campos {
-                display: flex;
-                gap: 20%;
-            }
-
-            ul {
-                gap: 20px;
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                padding-left: 0px;
-            }
-
+        .button {
+            background: $color-principal;
+            color: aliceblue;
         }
 
-        .targeta__registro-botones {
-            height: 100px;
-            text-align: center;
-            padding-top: 45px;
-
-            .button {
-                background: $color-principal;
-                color: aliceblue;
-            }
-
-            .targeta__link {
-                text-decoration: none;
-                color: black;
-                font-weight: bold;
-                padding-top: 35px;
-                display: flex;
-                flex-direction: column;
-            }
+        .registro__link {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding-top: 35px;
+            display: flex;
+            flex-direction: column;
         }
     }
 }
