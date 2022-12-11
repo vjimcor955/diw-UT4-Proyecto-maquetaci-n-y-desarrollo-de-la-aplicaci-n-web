@@ -1,0 +1,698 @@
+@font-face {
+  font-family: Jost;
+  src: url("Jost-Medium.e5759740.ttf");
+}
+
+header.header {
+  width: 100%;
+  height: 15vh;
+  color: #f0f8ff;
+  background-color: #dd5353;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+header.header .header__logo {
+  width: 15vw;
+  text-align: center;
+}
+
+header.header .header__menu {
+  width: 55vw;
+  justify-content: center;
+  column-gap: 40px;
+  font-size: medium;
+  font-weight: bold;
+  display: flex;
+}
+
+header.header .header__menu .header__link {
+  color: #f0f8ff;
+  text-decoration: none;
+}
+
+header.header .header__registro {
+  width: 25vw;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  font-size: medium;
+  font-weight: bold;
+  display: flex;
+}
+
+header.header .header__registro .header__link {
+  color: #f0f8ff;
+  text-decoration: none;
+}
+
+header.header .header__registro .button {
+  background-color: #eddbc0;
+}
+
+.footer {
+  width: 100%;
+  height: 15vh;
+  color: #f0f8ff;
+  background-color: #dd5353;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer .footer__logo {
+  width: 10vw;
+  text-align: center;
+}
+
+.footer .footer__logo img {
+  width: 35%;
+}
+
+.footer .footer__menu {
+  width: 75vw;
+  justify-content: center;
+  column-gap: 40px;
+  display: flex;
+}
+
+.footer .footer__menu .footer__link {
+  color: #f0f8ff;
+  text-decoration: none;
+}
+
+.footer .footer__iconos {
+  width: 15vw;
+  justify-content: center;
+  column-gap: 20px;
+  display: flex;
+}
+
+.footer .footer__iconos .icono {
+  width: 35px;
+}
+
+.inicio_sesion h1 {
+  padding-top: 5%;
+  padding-bottom: 20px;
+}
+
+.inicio_sesion .inicio_sesion__campos {
+  text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30%;
+  font-weight: bold;
+  display: flex;
+}
+
+.inicio_sesion .inicio_sesion__campos .campos {
+  flex-direction: column;
+  gap: 50px;
+  display: flex;
+}
+
+.inicio_sesion .inicio_sesion__campos ul {
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.inicio_sesion .inicio_sesion__botones {
+  height: 100px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.registro .registro__campos {
+  text-align: left;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 15%;
+  padding-left: 75px;
+  font-weight: bold;
+  display: flex;
+}
+
+.registro .registro__campos .campos {
+  gap: 20%;
+  display: flex;
+}
+
+.registro .registro__campos ul {
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+}
+
+.registro .registro__botones {
+  height: 100px;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.button {
+  color: #000;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Jost;
+}
+
+.inicio {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.inicio .inicio__fondo {
+  opacity: .9;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.inicio .inicio__imagen {
+  width: 40%;
+  z-index: 1;
+  position: relative;
+  top: -70%;
+}
+
+.campeones {
+  width: 100%;
+  height: 50vh;
+  color: #f0f8ff;
+  background-color: #9b3939;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.campeones .campeones__marco-imagen {
+  width: 50%;
+  text-align: center;
+  top: 50%;
+}
+
+.campeones .campeones__marco-imagen .campeones__imagen {
+  width: 60%;
+}
+
+.campeones .campeones__texto {
+  width: 50%;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 10%;
+  display: flex;
+}
+
+.campeones .campeones__texto h1 {
+  margin-top: 0;
+}
+
+.campeones .campeones__texto p {
+  font-size: larger;
+}
+
+.campeones .campeones__texto .button {
+  background-color: #eddbc0;
+}
+
+.maestrias {
+  width: 100%;
+  height: 50vh;
+  color: #000;
+  background-color: #dbc8ac;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.maestrias .maestrias__marco-imagen {
+  width: 50%;
+  text-align: center;
+}
+
+.maestrias .maestrias__marco-imagen .maestrias__imagen {
+  width: 60%;
+}
+
+.maestrias .maestrias__texto {
+  width: 50%;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10%;
+  display: flex;
+}
+
+.maestrias .maestrias__texto h1 {
+  margin-top: 0;
+}
+
+.maestrias .maestrias__texto p {
+  font-size: larger;
+}
+
+.maestrias .maestrias__texto .button {
+  color: #f0f8ff;
+  background-color: #9b3939;
+}
+
+.desafios {
+  width: 100%;
+  height: 50vh;
+  color: #f0f8ff;
+  background-color: #9b3939;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.desafios .desafios__marco-imagen {
+  width: 50%;
+  text-align: center;
+  top: 50%;
+}
+
+.desafios .desafios__marco-imagen .desafios__imagen {
+  width: 60%;
+}
+
+.desafios .desafios__texto {
+  width: 50%;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 10%;
+  display: flex;
+}
+
+.desafios .desafios__texto h1 {
+  margin-top: 0;
+}
+
+.desafios .desafios__texto p {
+  font-size: larger;
+}
+
+.desafios .desafios__texto .button {
+  background-color: #eddbc0;
+}
+
+.targeta {
+  width: inherit;
+  z-index: 1;
+  perspective: 2000px;
+  display: flex;
+  position: absolute;
+  top: 23%;
+}
+
+.targeta .inicio_sesion {
+  width: 585px;
+  height: 500px;
+  transform-style: preserve-3d;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+  position: absolute;
+  left: 10%;
+}
+
+.targeta .inicio_sesion .button {
+  color: #f0f8ff;
+  background: #dd5353;
+}
+
+.targeta .inicio_sesion .targeta__link {
+  color: #000;
+  flex-direction: column;
+  padding-top: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+}
+
+.targeta .registro {
+  width: 585px;
+  height: 500px;
+  transform-style: preserve-3d;
+  transform: rotate3d(180deg);
+  backface-visibility: hidden;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+  position: absolute;
+  right: 10%;
+}
+
+.targeta .registro .button {
+  color: #f0f8ff;
+  background: #dd5353;
+}
+
+.targeta .registro .registro__link {
+  color: #000;
+  flex-direction: column;
+  padding-top: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+}
+
+.campeones__marco {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 20%;
+}
+
+.campeones__marco .campeones__header {
+  align-items: center;
+  display: flex;
+}
+
+.campeones__marco .campeones__header .campeones__titulo {
+  width: 300px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+  position: relative;
+  left: -20%;
+}
+
+.campeones__marco .campeones__header .campeones__contador {
+  width: 500px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+  position: relative;
+  right: -20%;
+}
+
+.campeones__marco .campeones__tabla {
+  width: 80%;
+  height: 450px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+}
+
+.campeones__marco .campeones__tabla .tabla {
+  width: 100%;
+  height: inherit;
+  padding: 5%;
+}
+
+.campeones__marco .campeones__tabla .tabla .tabla__head {
+  font-size: large;
+}
+
+.campeones__marco .campeones__tabla .tabla .jungla {
+  background: #9f9;
+}
+
+.campeones__marco .campeones__tabla .tabla .medio {
+  background: #ff9;
+}
+
+.campeones__marco .campeones__tabla .tabla .superior {
+  background: #f66;
+}
+
+.campeones__marco .campeones__tabla .tabla .tirador {
+  background: #80b3ff;
+}
+
+.maestrias__marco {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+}
+
+.maestrias__marco .maestrias__titulo {
+  width: 300px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+  position: relative;
+  left: 10%;
+}
+
+.maestrias__marco .maestrias__campeones {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 {
+  width: 70%;
+  height: 120px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  display: flex;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__imagen h3 {
+  margin: 5%;
+  top: 5%;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__imagen .campeon__imagen-contenido {
+  align-items: center;
+  gap: 70px;
+  display: flex;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__imagen .campeon__imagen-contenido img {
+  width: 30%;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__maestria {
+  align-items: center;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__maestria h3 {
+  margin: 5%;
+  top: 5%;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__maestria img {
+  width: 80%;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__partidas {
+  align-items: center;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__partidas h3 {
+  margin: 5%;
+  top: 5%;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__victorias {
+  align-items: center;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__campeon_1 .campeon__victorias h3 {
+  margin: 5%;
+  top: 5%;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__scroll_campeones {
+  width: 50%;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__scroll_campeones .maestrias__campeon {
+  width: 100%;
+  height: 75px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 12%;
+  display: flex;
+}
+
+.maestrias__marco .maestrias__campeones .maestrias__scroll_campeones .maestrias__campeon img {
+  width: 7%;
+}
+
+.desafios__marco {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+}
+
+.desafios__marco .desafios__titulo {
+  width: 300px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+  margin-bottom: 10%;
+  position: relative;
+  left: 10%;
+}
+
+.desafios__marco .desafios__scroll {
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+  display: flex;
+}
+
+.desafios__marco .desafios__scroll .desafios__targeta {
+  width: 20%;
+  height: 250px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.desafios__marco .desafios__scroll .desafios__targeta .desafios__targeta-desafio {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.desafios__marco .desafios__scroll .desafios__targeta .desafios__targeta-desafio .desafio {
+  width: 60%;
+}
+
+.desafios__marco .desafios__scroll .desafios__targeta .desafios__targeta-desafio .progreso {
+  width: 40%;
+}
+
+.mensaje__404 {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  position: absolute;
+  top: 25%;
+}
+
+.mensaje__404 .circulo__grande {
+  width: 50px;
+  height: 50px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 50px;
+  margin-left: -500px;
+  animation-name: animacion_circulo__grande;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animacion_circulo__grande {
+  0% {
+    margin-left: -500px;
+  }
+
+  50% {
+    margin-left: 500px;
+  }
+
+  100% {
+    margin-left: -500px;
+  }
+}
+
+.mensaje__404 .circulo__prequeño {
+  width: 25px;
+  height: 25px;
+  background-color: #9b3939;
+  border: 5px solid #dbc8ac;
+  border-radius: 25px;
+  margin-left: 500px;
+  animation-name: animacion_circulo__pequeño;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animacion_circulo__pequeño {
+  0% {
+    margin-left: 500px;
+  }
+
+  50% {
+    margin-left: -500px;
+  }
+
+  100% {
+    margin-left: 500px;
+  }
+}
+
+.mensaje__404 .mensaje {
+  width: 500px;
+  height: 250px;
+  background-color: #dbc8ac;
+  border: 5px solid #9b3939;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.mensaje__404 .mensaje h1 {
+  margin: 0;
+}
+
+.mensaje__404 .button {
+  color: #f0f8ff;
+  width: 25%;
+  background-color: #dd5353;
+}
+
+/*# sourceMappingURL=index.f7626f62.css.map */

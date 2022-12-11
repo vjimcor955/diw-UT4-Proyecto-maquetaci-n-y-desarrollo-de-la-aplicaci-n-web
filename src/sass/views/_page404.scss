@@ -5,21 +5,35 @@
     top: 25%;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: center;  
     flex-direction: column;
     gap: 10px;
 
-    .circulo__grande{
+    .circulo__grande {
         width: 50px;
         height: 50px;
         background-color: $color-secundario-oscuro;
         border: 5px solid $color-principal-oscuro;
         border-radius: 50px;
+        margin-left: -500px;
 
-        @keyframes animacion_circulo_grande {
-            
+        animation-name: animacion_circulo__grande;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animacion_circulo__grande {
+        0% {
+            margin-left: -500px;
         }
-
+        50% {
+            margin-left: 500px;
+        }
+        100%{
+            margin-left: -500px;
+        }
     }
 
     .circulo__prequeño{
@@ -28,9 +42,24 @@
         background-color: $color-principal-oscuro;
         border: 5px solid $color-secundario-oscuro;
         border-radius: 25px;
+        margin-left: 500px;
 
-        @keyframes animacion_circulo_grande {
-            
+        animation-name: animacion_circulo__pequeño;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+
+    @keyframes animacion_circulo__pequeño {
+        0% {
+            margin-left: 500px;
+        }
+        50% {
+            margin-left: -500px;
+        }
+        100%{
+            margin-left: 500px;
         }
     }
 
