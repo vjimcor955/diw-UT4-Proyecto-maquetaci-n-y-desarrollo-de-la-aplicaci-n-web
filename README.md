@@ -19,4 +19,6 @@ Se incluyen las siguientes páginas:
 Para el desarrollo y maquetación de la aplicación se han usado documentos SASS y un workflow moderno de desarrollo front-end como es NPM, un gestor de paquetes 
 de NodeJS, y Parcel, una herramienta Javascript que procesa todo el código de nuestra aplicación web.
 
+Proyecto realizado por Víctor Jiménez Corada 2º DAW.
+
 Link del repositorio: https://github.com/vjimcor955/diw-UT4-Proyecto-maquetaci-n-y-desarrollo-de-la-aplicaci-n-web.git
