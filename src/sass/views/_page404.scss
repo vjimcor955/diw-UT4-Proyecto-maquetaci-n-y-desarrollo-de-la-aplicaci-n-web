@@ -1,1 +1,59 @@
 // Page404
+
+.mensaje__404 {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    .circulo__grande{
+        width: 50px;
+        height: 50px;
+        background-color: $color-secundario-oscuro;
+        border: 5px solid $color-principal-oscuro;
+        border-radius: 50px;
+
+        @keyframes animacion_circulo_grande {
+            
+        }
+
+    }
+
+    .circulo__prequeño{
+        width: 25px;
+        height: 25px;
+        background-color: $color-principal-oscuro;
+        border: 5px solid $color-secundario-oscuro;
+        border-radius: 25px;
+
+        @keyframes animacion_circulo_grande {
+            
+        }
+    }
+
+    .mensaje {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-secundario-oscuro;
+        border: 5px solid $color-principal-oscuro;
+        border-radius: 20px;
+        width: 500px;
+        height: 250px;
+
+        h1{
+            margin: 0px;
+        }
+    }
+
+    .button {
+        background-color: $color-principal;
+        color: aliceblue;
+        width: 25%;
+    }
+}

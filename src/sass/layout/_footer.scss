@@ -24,6 +24,11 @@
         display: flex;
         justify-content: center;
         column-gap: 40px;
+
+        .footer__link {
+            color: aliceblue;
+            text-decoration: none;
+          }
     }
     
     .footer__iconos {
