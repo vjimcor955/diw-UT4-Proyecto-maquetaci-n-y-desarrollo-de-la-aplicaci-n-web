@@ -4,7 +4,9 @@ En este repositorio se recogen los archivos del proyecto diw-UT4-Proyecto-maquet
 diseño y prototipado de la aplicación creada en figma en el anterior proyecto, se incluyen las siguientes carpetas y ficheros:
 
 dist/
+
 src/
+
 package.json
 
 Se incluyen las siguientes páginas:
