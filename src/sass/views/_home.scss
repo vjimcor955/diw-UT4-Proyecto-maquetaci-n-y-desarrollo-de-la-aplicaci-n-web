@@ -163,3 +163,11 @@ body {
         }
     }
 }
+
+@media (max-width: 800px) {
+  .campeones, .maestrias, .desafios {
+    height: max-content;
+    padding: 5vh 0;
+    font-size: small;
+  }
+}

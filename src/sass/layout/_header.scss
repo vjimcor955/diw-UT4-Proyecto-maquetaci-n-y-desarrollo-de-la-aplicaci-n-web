@@ -2,7 +2,8 @@
 
 header.header {
   width: 100%;
-  height: 15vh;
+  height: max-content;
+  padding: 3vh 0;
   background-color: $color-principal;  
   color: aliceblue;
   display: flex;
@@ -11,17 +12,42 @@ header.header {
   align-items: center;
 
   .header__logo {
-    width: 15vw;
+    width: 150px;
     text-align: center;
+    padding-left: 50px;
   }
 
+  .boton__menu img {
+    display: none;
+    width: 5vw;
+    cursor: pointer;
+  }
+
+  .header__logo-small{
+    display: none;
+    align-items: center;
+  }
+
+
+
   .header__menu {
-    width: 55vw;
-    font-weight: bold;
-    font-size: medium;
-    display: flex;
-    justify-content: center;
-    column-gap: 40px;
+    padding-left: 100px;
+    
+    ul {
+      width: 50vw;
+      font-weight: bold;
+      font-size: medium;
+      display: flex;
+      justify-content: center;
+      column-gap: 40px;
+      align-items: center;
+    }
+
+    li {
+      display: block;
+      line-height: 30px;
+      transition: all .5s;  
+    }
 
     .header__link {
       color: aliceblue;
@@ -37,6 +63,7 @@ header.header {
     justify-content: center;
     column-gap: 15px;
     align-items: center;
+    padding-left: 30px;
 
     .header__link {
       color: aliceblue;
@@ -47,4 +74,98 @@ header.header {
       background-color: $color-secundario;
     }
   }
+
+
+
+  #check {
+    display: none;
+  }
+
+  div #check:checked ~ .header__menu ul {
+    height: max-content;
+    padding: 3vh 0;
+  }
+
+  div #check:checked ~ .header__menu li {
+    display: block;
+  }
 }
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  header.header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    
+    .header__logo {
+      display: none;     
+    }
+
+
+
+    .header__menu {
+      ul {
+        position: fixed;
+        width: 100%;
+        height: 0px;          // height: max-content;
+        padding: 0vh 0;       // padding: 3vh 0;
+        top: 115px;
+        left: 0px;
+        text-align: center;
+        background: rgba(0, 0, 0, .75);
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+      }
+  
+      li {
+        display: none;    //display: block
+        line-height: 30px;
+        margin: 20px 0;
+        transition: all .5s;  
+      }
+
+      .header__registro {
+        display: none;
+        margin: 40px 0;
+      }
+  
+      .header__link {
+        color: aliceblue;
+        text-decoration: none;
+      }
+    }
+
+
+
+    img.header__logo-small {
+      display: block;
+      padding-left: 100px;
+    }
+
+    .boton__menu img {
+      display: block;
+      width: 30px;
+    }
+  }
+}
+// #check {
+//   display: none;
+// }
+
+// div #check:checked ~ .header__menu {
+//   height: max-content;
+//   padding: 3vh 0;
+// }
+
+// div #check:checked ~ .header__menu li {
+//   display: block;
+// }

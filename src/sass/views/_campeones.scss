@@ -6,18 +6,19 @@
     top: 20%;
     flex-direction: column;
     width: 100%;
+    height: 90vh;
     align-items: center;
 
     .campeones__header {
         display: flex;
         align-items: center;
+        gap: 10px;
         
         .campeones__titulo {
             position: relative;
             background-color: $color-secundario-oscuro;
             border: 5px solid $color-principal-oscuro;
             border-radius: 20px;
-            left: -20%;
             width: 300px;
         }
 
@@ -26,7 +27,6 @@
             background-color: $color-secundario-oscuro;
             border: 5px solid $color-principal-oscuro;
             border-radius: 20px;
-            right: -20%;
             width: 500px;
         }
     }
@@ -36,11 +36,11 @@
         border: 5px solid $color-principal-oscuro;
         border-radius: 20px;
         width: 80%;
-        height: 450px;
+        height: 100%;
 
         .tabla {
             width: 100%;
-            height: inherit;
+            height: 100%;
             padding: 5%;
 
             .tabla__head {
@@ -65,3 +65,12 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .campeones__header {
+        flex-direction: column;
+    }
+    
+    .tabla {
+        font-size: small;
+    }
+}
